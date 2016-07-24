@@ -4,6 +4,8 @@ gem "bootstrap-sass"
 
 gem "devise"
 
+gem "will_paginate"
+
 gem "simple_form"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0'
