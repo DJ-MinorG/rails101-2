@@ -1,6 +1,11 @@
 class PostsController < ApplicationController
-
+  before_action :authenticate_user!
   before_filter :authenticate_user!, :only => [:new, :create]
+
+  def index
+    @posts=current_user.posts
+  end
+
 
   def new
     @group = Group.find(params[:group_id])
